@@ -384,3 +384,25 @@ table{
 }
 
 }
+
+
+@media only screen and (min-width: 950px) {
+	.hamburger-menu {
+		display: none;
+	}
+}
+
+@media (max-device-width: 736px) and (min-device-width: 320px), only screen and (max-width: 950px) {
+
+	.main-menu,
+	.language-menu {
+		display: none;
+	}
+
+	.hamburger-menu {
+		display: block;
+		color: white;
+		margin: 26px 5px;
+	}
+}
+

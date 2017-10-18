@@ -367,9 +367,6 @@ table{
 
 
 @media (max-device-width: 736px) and (min-device-width: 320px), only screen and (max-width: 480px) {
-body {
-	font-size: 2.5em;
-}
 
 .promo-offers,
 .products,

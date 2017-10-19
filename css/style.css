@@ -403,7 +403,11 @@ body {
 .main-header-logo {
 	padding-top: 20px;
 }
-
+	
+.lng-btn {
+	padding: 20px;	
+}
+	
 .promo-offers,
 .products,
 .about-company-wrapper,

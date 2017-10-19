@@ -266,6 +266,12 @@ h3 {
 	margin-bottom: 30px;
 }
 
+.clients-logo {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
 .reviews-wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -422,12 +428,14 @@ body {
 .promo-offers,
 .products,
 .about-company-wrapper,
-.reviews-wrapper {
+.reviews-wrapper,
+.clients-logo {
 	flex-direction: column;
 }
 
 .offer,
-.product-item  {
+.product-item,
+.logo  {
 	width: 100%;
 	outline: 1px solid gray;
 	margin-bottom: 10px;
@@ -436,7 +444,8 @@ body {
 .client-review,
 .map,
 .about-company-text,
-.contact-form {
+.contact-form,
+.clients-logo {
 	width: 100%;
 	margin-bottom: 10px;
 }

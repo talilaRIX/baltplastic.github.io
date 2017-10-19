@@ -108,14 +108,14 @@ img {
 	background: gray url("../img/bags-central.jpg");
 	background-size: cover;
 	min-height: 300px;
-	padding: 40px;
+	padding: 5%;
 }
 
 .banner-text {
 	text-align: center;
 	margin-right: auto;
 	margin-left:  auto;
-	padding: 10px;
+	padding: 5%;
 	background: rgba(10, 8, 89, 0.4);
 
 	color: #ffffff;
@@ -143,7 +143,7 @@ img {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 4em;
+	margin-bottom: 3em;
 }
 
 .offer {
@@ -155,7 +155,7 @@ img {
 
 
 h3 {
-	font-size: 1.875em;
+	font-size: 1.5em;
 	margin: 0;
 }
 
@@ -213,19 +213,18 @@ h3 {
 }
 
 .about-company-text {
+	width: 50%;
 	margin-right: 20px;
 }
 
 .map {
+	width: 50%;
 	padding-top: 50px;
 	position: relative;
 }
 
-.map-contact {
-	position: absolute;
-	content: "";
-	top: 118px;
-	left: 244px;
+.map iframe {
+	width: 100%;
 }
 
 .reviews {
@@ -367,6 +366,25 @@ table{
 
 
 @media (max-device-width: 736px) and (min-device-width: 320px), only screen and (max-width: 480px) {
+body {
+	font-size: 1.5em;
+}
+
+.banner-text h1 {
+	font-size: 1.5em;
+}
+
+.banner-text p {
+	font-size: 1em;
+}
+
+.section-title {
+	font-size: 1.5em;
+}
+
+.main-header-logo {
+	padding-top: 20px;
+}
 
 .promo-offers,
 .products,
@@ -376,26 +394,47 @@ table{
 }
 
 .offer,
-.product-item,
-.client-review {
+.product-item  {
 	width: 100%;
 	outline: 1px solid gray;
 	margin-bottom: 10px;
 }
 
+.client-review,
+.map,
+.about-company-text {
+	width: 100%;
+	margin-bottom: 10px;
 }
 
+.info-title {
+	font-size: 1.2em;
+}
 
-@media only screen and (min-width: 950px) {
-	.hamburger-menu {
+.info-text img {
+	display: none;
+}
+
+}
+
+@media only screen and (min-width: 850px) {
+	.footer-mobile {
 		display: none;
 	}
 }
 
-@media (max-device-width: 736px) and (min-device-width: 320px), only screen and (max-width: 950px) {
 
+@media only screen and (max-width: 850px) {
+
+	.main-header-logo {
+		padding-top: 10px;
+	}
 	.main-menu,
 	.language-menu {
+		display: none;
+	}
+
+	.desktop {
 		display: none;
 	}
 
@@ -404,5 +443,20 @@ table{
 		color: white;
 		margin: 26px 5px;
 	}
+
+	.footer-mobile {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.about-company-wrapper {
+		flex-direction: column;
+	}
+
+.about-company-text,
+.map {
+	width: 100%;
 }
 
+}

@@ -134,6 +134,7 @@ img {
 	display: flex;
 	justify-content: space-around;
 	color: red;
+
 }
 
 .banner {
@@ -256,7 +257,8 @@ h3 {
 	position: relative;
 }
 
-.map iframe {
+.map iframe,
+.contact-form iframe {
 	width: 100%;
 }
 
@@ -318,11 +320,13 @@ footer {
 	text-decoration: underline;
 }
 
-.contact-map-wrapper {
-	display: flex;
-	justify-content: space-between;
+.contact-form {
+	width: 50%;
 }
 
+.map-about {
+	width: 100%;
+}
 .promo-wrapper {
 	display: flex;
 	justify-content: space-around;
@@ -331,7 +335,7 @@ footer {
 }
 
 .promo-wrapper p {
-	margin: 0;
+	margin: 0 5%;
 	padding: 0;
 	text-align: left;
 }
@@ -431,7 +435,8 @@ body {
 
 .client-review,
 .map,
-.about-company-text {
+.about-company-text,
+.contact-form {
 	width: 100%;
 	margin-bottom: 10px;
 }
@@ -446,6 +451,34 @@ body {
 
 .our-products {
 	margin-bottom: 0;
+}
+
+.promo-wrapper {
+	flex-direction: column;
+	padding: 5%;
+	outline: 1px solid gray;
+}
+
+.order {
+	margin-top: 10px;
+}
+
+.inside-title {
+	margin: 0;
+	font-size: 2em;
+}
+
+.breadcrumbs {
+	flex-direction: column;
+}
+
+.breadcrumbs ul {
+	margin: 0;
+}
+
+.table-responsive {
+	max-width: 100%;
+	overflow: auto;
 }
 
 }
@@ -488,12 +521,18 @@ body {
 	}
 
 .about-company-text,
-.map {
+.map,
+.contact-form {
 	width: 100%;
 }
 
 .our-products {
 	margin-bottom: 0;
+}
+
+.inside-title {
+	margin: 0;
+	font-size: 2em;
 }
 
 }

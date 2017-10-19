@@ -81,30 +81,41 @@ img {
 	max-width: 100%;
 }
 
-.dropdown {
-	position: absolute;
-	display: none;
-	z-index: 10;
-	width: 50%;
-	top: 40px;
-	right: 0;
-	background-color: white;
-	padding: 20px;
-	text-align: center;
+
+.list-menu {
+ display: none;
+ position: absolute;
+ z-index: 10;
+ width: 50%;
+ top: 40px;
+ right: 0;
+ background-color: white;
+ padding: 20px;
+ text-align: center;
 }
 
-.dropdown a {
+#lng-btn {
+ display: none;
+}
+
+#lng-btn + label + .list-menu {
+ display: none;
+}
+
+#lng-btn:checked + label + .list-menu {
+ display: block;
+}
+
+
+.list-menu a {
 	color: black;
 	text-decoration: underline;
 }
 
-.dropdown li {
+.list-menu li {
 	padding: 10px 0;
 }
 
-.lng-btn:hover > .dropdown {
-	display: block;
-}
 
 .main-menu li,
 .announcement li {
@@ -403,8 +414,7 @@ body {
 .main-header-logo {
 	padding-top: 20px;
 }
-	
-	
+
 .promo-offers,
 .products,
 .about-company-wrapper,
